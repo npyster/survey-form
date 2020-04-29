@@ -1,0 +1,86 @@
+<!--<script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>-->
+
+<div class="container">
+  <header class="header">
+    <h1 id="title" class="text-center">Virgin Orbit Survey</h1>
+    <p id="description" class="description text-center">Thank you for taking the time to share your feedback</p>
+  </header>
+  <form id="survey-form">
+    <div class="form-group">
+      <label id="name-label" for="name">Name</label>
+      <input type="text" name="name" id="name" class="form-control" placeholder="Please enter your name" required />
+    </div>
+    <div class="form-group">
+      <label id="email-label" for="email">Email</label>
+      <input type="email" name="email" id="email" class="form-control" placeholder="Please enter your email" required />
+    </div>
+    <div class="form-group">
+      <p>What team are you part of?</p>
+      <select id="dropdown" name="role" class="form-control" required>
+        <option disabled selected value>Select current team</option>
+        <option value="safety-mission-assurance">Safety & Mission Assurance</option>
+        <option value="program-management">Program Management</option>
+        <option value="production-operations">Production Operations</option>
+        <option value="flight-test-launch-operations"> Flight, Test & Launch Operations</option>
+        <option value="supply-chain">Supply Chain</option>
+        <option value="engineering">Engineering</option>
+        <option value="propulsion">Propulsion</option>
+        <option value="structures">Structures</option>
+        <option value="avionics">Avionics</option>
+        <option value="seit">Seit</option>
+        <option value="flight-sciences">Flight Sciences</option>
+        <option value="brand-communications">Brand & Communications</option>
+        <option value="business-development">Business Development</option>
+        <option value="finance-accounting">Finance & Accounting</option>
+        <option value="facilities-it-legal">Ficilities, IT & Legal</option>
+        <option value="government-affairs">Government Affairs</option>
+        <option value="hr">HR</option>
+      </select>
+    </div>
+    <div class="form-group">
+      <label id="number-label" for="number">Years with the company</label>
+      <input type="number" name="years" id="number" min="0" max="99" class="form-control" placeholder="enter amount in years" />
+    </div>
+    <div class="form-group">
+      <label id="manager-email-label" for="manager-email">What is your manager's email?</label>
+      <input type="email" name="email" id="email" class="form-control" placeholder="please enter your manager's email" required />
+    </div>
+    <div class="form-group">
+      <p>Your Goals:</p>
+      <textarea id="goals" class="input-textarea" name="goals" placeholder="please enter your goals here..." required></textarea>
+    </div>
+    <div class="form-group">
+      <p>Briefly describe the goals you defined with your manager for last quarter.</p>
+      <textarea id="manager-goals" class="input-textarea" name="manager-goals" placeholder="please enter your defined goals here..." required></textarea>
+    </div>
+    <div class="form-group">
+      <p>How did you measure up against your goals last quarter?<span class="clue">(If you selected “Didn’t make progress” or “Redefined our industry,” you’ll be asked to share additional details)</span></p>
+      <label>
+        <input name="user-response" value="no-progress" type="radio" class="input-radio" required />Didn't make progress</label>
+      <label>
+        <input name="user-response" value="some-progress" type="radio" class="input-radio" />Met some, but not all, goals</label>
+      <label>
+        <input name="user-response" value="met-goals" type="radio" class="input-radio" />Met all goals...(and may have exceeded some)</label>
+      <label>
+        <input name="user-response" value="exceeded goals" type="radio" class="input-radio" />Exceeded all goals</label>
+      <label>
+        <input name="user-response" value="redifined-industry" type="radio" class="input-radio" />Redifined our industry</label>
+    </div>
+    <div class="form-group">
+      <p>Do you have any additional comments on your goals you’d like to share?<span class="clue">(Please also include any other major or unexpected projects that came up along the way that you participated in)</span></p>
+      <textarea id="comments" class="input-textarea" name="comments" placeholder="please enter additional comments here..."></textarea>
+    </div>
+    <div class="form-group">
+      <p>Was this helpful?<span class="clue">(Optional)</span></p>
+      <label>
+        <input name="prefer" value="yes" type="checkbox" class="input-checkbox">Yes</label>
+      <label>
+        <input name="prefer" value="sort-of" type="checkbox" class="input-checkbox">Sort of</label>
+      <label>
+        <input name="prefer" value="no" type="checkbox" class="input-checkbox">No</label>
+    </div>
+    <div class="form-group">
+      <button type="submit" id="submit" class="submit-button"> Submit</button>
+    </div>
+  </form>
+</div>
